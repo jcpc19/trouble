@@ -1,0 +1,310 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Trouble Game</title>
+        <style>
+            .board{
+                width:806px;
+                height:900px;
+                margin: 10px;
+                border: 20px solid #333;
+            }
+
+            .start
+            {
+                float: left; 
+                width: 60px; 
+                height: 60px; 
+                background-color: lightgoldenrodyellow; 
+                font-size:25px; 
+                text-align:center; 
+                display: table-cell;
+                vertical-align:middle; 
+                border:1px solid black;
+
+            }
+            div.dice{
+                float:left;
+                width:60px;
+                background-color:white;
+                border: black 1px solid;
+              
+                font-size:25px;
+                text-align:center;
+
+
+            }
+            .white {
+                float: left;
+                width: 60px; height: 60px;
+                background-color: white;
+                font-size:24px; 
+                text-align:center;
+                display: table-cell;
+                vertical-align:middle;
+                border:1px solid black;
+            }
+            .red { 
+                float: left;
+                width: 60px; 
+                height: 60px; 
+                background-color: red; 
+                font-size:25px; 
+                text-align:center; 
+                display: table-cell;
+                vertical-align:middle; 
+                border:1px solid black; }
+
+            .blue { 
+                float: left; 
+                width: 60px; 
+                height: 60px; 
+                background-color: blue; 
+                font-size:25px; 
+                text-align:center; 
+                display: table-cell;
+                vertical-align:middle; 
+                border:1px solid black; 
+                }
+
+            .green { 
+                 float: left; 
+                 width: 60px; 
+                 height: 60px; 
+                 background-color: green; 
+                 font-size:25px; 
+                 text-align:center; 
+                 display: table-cell;
+                vertical-align:middle; 
+                border:1px solid black; 
+                }
+
+            .purple { 
+                float: left; 
+                width: 60px; 
+                height: 60px;                     
+                background-color: purple; 
+                font-size:25px; 
+                text-align:center; 
+                display: table-cell;
+                vertical-align:middle; 
+                border:1px solid black; }
+
+            .blank {
+                float: left; 
+                width: 60px; 
+                height: 60px; 
+                background-color:black; 
+                font-size:25px; 
+                text-align:center; 
+                display: table-cell;
+                vertical-align:middle; 
+                border:1px solid black;
+            }
+        </style>
+
+        <script>
+             var die1 = document.getElementById("die");  
+             var status = document.getElementById("status");
+             var d1 = Math.floor(Math.random() * 6) + 1; 
+            var diceTotal = d1; 
+            die1.innerHTML = d1; 
+            status.innerHTML = "You rolled "+diceTotal+"."; 
+        </script>
+    </head>
+
+    <body>
+        <div class="board">
+            
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+
+
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="start"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="red"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            
+
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="red"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+
+
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="red"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="green"></div>
+
+            <div class="blue"></div>
+            <div class="start"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="red"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="green"></div>
+
+
+            <div class="blue"></div>
+            <div class="white"></div>
+            <div class="blue"></div>
+            <div class="blue"></div>
+            <div class="blue"></div>
+            <div class="blue"></div>
+            <div class="blank"></div>
+            <div class="green"></div>
+            <div class="green"></div>
+            <div class="green"></div>
+            <div class="green"></div>
+            <div class="white"></div>
+            <div class="green"></div>
+
+            <div class="blue"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="purple"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="start"></div>
+            <div class="green"></div>   
+
+            <div class="blue"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="purple"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>  
+
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="purple"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>    
+
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="purple"></div>
+            <div class="blank"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div> 
+
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="start"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>   
+           
+           <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="purple"></div>
+            <div class="purple"></div>
+            <div class="purple"></div>
+            <div class="purple"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            
+        </div>
+
+        <button onclick="rollDice()">Roll Dice</button>
+        <h2 id="status" style="clear:left;"></h2>
+    </body>
+</html>
